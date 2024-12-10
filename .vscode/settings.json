@@ -1,0 +1,13 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "server": "aws-0-ap-southeast-1.pooler.supabase.com",
+            "driver": "PostgreSQL",
+            "name": "Supabase",
+            "database": "postgres",
+            "username": "postgres.bybsgzlcajqgprauycfm",
+            "connectString": "postgresql://postgres.bybsgzlcajqgprauycfm:Sijam@momy0927@aws-0-ap-southeast-1.pooler.supabase.com:6543/postgres"
+        }
+    ]
+}
