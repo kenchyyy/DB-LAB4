@@ -1,4 +1,8 @@
     
     How would I ensure the prevention of borrowing books when no copies are available?
 
-- 
+- There could be different ways in ensuring that the problem of borrowing books when no copies are available. One way would be to do it in the schema
+of your database itself. Another way, and this would be my way would be to handle it in the frontend. Make functions that check these conditions beforehand
+so that before it even gets to the database, the information would have already been checked and filtered out. The option where checking the conditions in
+database sounds a bit too troublesome as well as I think might cause some unwanted problems rather compared to just filtering what comes in the database first
+and making sure that they all align with the conditions so that the database is not too complicated.

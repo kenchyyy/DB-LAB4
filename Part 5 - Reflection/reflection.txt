@@ -1,0 +1,12 @@
+What challenges might arise when scaling this database to handle millions of users and books? Suggest one solution for each challenge.
+
+- Performance might degrade and slow down. This can happen when too many users and queries are being done to the database. I believe this can be solved
+by optimizing the database so that it can handle that amount of requests and queries. One solution the internet suggests is by indexing frequently used 
+columns to help the database find them much faster when querying.
+
+- Another problem that might arise is connection overloading. Too much users trying to connect to the database will lead to an overload in connecting to
+the databse. A quick search on the internet says that a solution to this problem would be to implement connection pooling and use tools like PgBouncer.
+
+- Storage problems will also surely be a problem once the user base grows and data keeps coming in. Managing the storage that keeps growing and growing as 
+the number of users and loans and books grow will be a task. A solution to this would be to implement data archiving where older data gets deleted or stored
+somewhere else like a different table or a different more dedicated database for older data.
