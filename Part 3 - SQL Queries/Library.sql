@@ -1,1 +1,0 @@
-INSERT INTO "Users" ("userName", "email") VALUES ('AJ', 'kenjoel@gmail.com')

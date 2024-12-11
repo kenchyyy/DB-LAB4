@@ -9,8 +9,7 @@ CREATE TABLE "Users" (
   );
 
 -- creating the books table
-create table
-  public."Books" (
+CREATE TABLE "Books" (
     "ISBN" VARCHAR(13) NOT NULL default '',
     "title" VARCHAR(100) NOT NULL default '',
     "author" VARCHAR(50) NOT NULL default '',
@@ -28,6 +27,7 @@ CREATE TABLE "Loans" (
     "dueDate" DATE NOT NULL default (current_date + '7 days'::interval),
     "userID" UUID NOT NULL default gen_random_uuid (),
     "ISBN" VARCHAR(13) NOT NULL default '',
+    "Status" VARCHAR(10) NOT NULL default 'Borrowed',
     CONSTRAINT loans_pkey PRIMARY KEY ("userID", "ISBN"),
     CONSTRAINT loans_isbn_fkey FOREIGN KEY ("ISBN") REFERENCES "Books" ("ISBN"),
     CONSTRAINT loans_userid_fkey FOREIGN KEY ("userID") REFERENCES "Users" ("userID")
